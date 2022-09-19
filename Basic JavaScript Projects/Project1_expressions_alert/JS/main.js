@@ -7,3 +7,7 @@ document.write(Sent1 + Sent2)//Concatenating the 2 strings above
 var A = 5, B = 6, C = 7 //creating 3 variables
 
 document.write(C + B) //telling the browser to print the sum of C and B (and expression)
+
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date()
+}
