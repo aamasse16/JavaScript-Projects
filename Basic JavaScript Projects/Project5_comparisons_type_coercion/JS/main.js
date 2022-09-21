@@ -27,7 +27,7 @@ var B = 10
 var C = "10"
 var D = "11"
 
-document.write (A === B)//using the variables i made to pring true and false using ===, && and ||
+document.write (A === B)//using the variables i made to print true and false using ===, && and ||
 
 document.write (A === D)
 
@@ -46,5 +46,8 @@ document.write (5 > 10 || 3 > 6)
 function notFunction() { // making a function to test the ! in order to see if somthing is false
     document.getElementById("not").innerHTML = !(10 > 20)
 }
+
+document.write(bigger = (10 > 5)? "Left number is bigger":"Right number is bigger")// ternary operator in this case is '?' if left num is bigger it will print that 
+//if not it will print right num is bigger
 
 
