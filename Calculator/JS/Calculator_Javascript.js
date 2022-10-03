@@ -26,7 +26,7 @@ function Input_Digit(digit) {
 }
 
 //this section handles decimal points
-function Input_Digit(dot) {
+function Input_Decimal(dot) {
     //this ensures that accidental clicking of the decimal point doesnt
     //cause bugs in the operation
     if (Calculator.Wait_Second_Operand === true) return
@@ -66,14 +66,14 @@ function Handle_Operator(Next_Operator) {
         Calculator.First_Operand = parseFloat(result)
     }
     Calculator.Wait_Second_Operand = true
-    Calculator.operator = Next_Operatorr
+    Calculator.operator = Next_Operator
 }
 const Perform_Calculation = {
     '/': (First_Operand, Second_Operand) => First_Operand / Second_Operand,
     '*': (First_Operand, Second_Operand) => First_Operand * Second_Operand,
     '+': (First_Operand, Second_Operand) => First_Operand + Second_Operand,
     '-': (First_Operand, Second_Operand) => First_Operand - Second_Operand,
-    '=': (First_Operand, Second_Operand) => Second_Operand
+    '=': (Second_Operand) => Second_Operand
 }
 function Calculator_Rest () {
     Calculator.Display_Value = "0"
