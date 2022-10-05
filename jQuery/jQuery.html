@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <script>
+        $(document).ready(function() {//this is all appended or added to my html
+            $("html").append(
+                "<body>\
+                    <div id= 'container'>\
+                        <div id= 'inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                            <p id='4'>Click to hide the all of these</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            $("#2").css({"color":"red"});//this changes paragraph 2 text to red
+            $("#4").click(function(){//this hides all the p elements when cliked
+                $("p").hide();
+            })
+            $("#3").click(function() {//this hides all h1 elements when clicked
+                $("h1").hide();
+            });
+
+            $("#1").click(function(){//this logs to the console the string below when you click the first paragraph
+            console.log("you clicked on the first paragraph");
+        });
+        });
+    </script>
+</html>
