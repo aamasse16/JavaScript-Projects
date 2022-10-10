@@ -1,9 +1,9 @@
 This is my JavaScript repository, in here I will be adding files and projects that follow along with my learning of JS!
 
 Projects
-- Pizza Menu
-- Tic Tac Toe Game
-- Calculator
+- [Pizza Menu](https://github.com/aamasse16/JavaScript-Projects/tree/main/Pizza_Project)
+- [Tic Tac Toe Game](https://github.com/aamasse16/JavaScript-Projects/tree/main/TicTacToe)
+- [Calculator](https://github.com/aamasse16/JavaScript-Projects/tree/main/Calculator)
 
 Pizza Menu
 
